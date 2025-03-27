@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>盟誓宴礼盒介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            width: 100%;
+            min-height: 100vh;
+            position: relative;
+            overflow-y: auto;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        
+        /* 初始界面样式 */
+        .home-container {
+            width: 100%;
+            min-height: 100vh;
+            background-image: url('zong.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        
+        .home-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .option-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .option-btn {
+            width: 200px;
+            padding: 1rem;
+            font-size: 1rem;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+        
+        .option-btn:hover {
+            background-color: white;
+        }
+        
+        /* 内容页面通用样式 */
+        .content-container {
+            display: none;
+            width: 100%;
+            min-height: 100vh;
+            padding: 20px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            position: relative;
+        }
+        
+        .back-btn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 0.5rem 1rem;
+            background-color: rgba(255, 255, 255, 0.7);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .content-text {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+        
+        .content-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .home-title {
+                font-size: 1.5rem;
+            }
+            
+            .content-title {
+                font-size: 1.2rem;
+            }
+            
+            .content-text {
+                font-size: 0.9rem;
+            }
+            
+            .option-btn {
+                width: 160px;
+                padding: 0.8rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .home-title {
+                font-size: 1.2rem;
+            }
+            
+            .content-title {
+                font-size: 1rem;
+            }
+            
+            .content-text {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 初始界面 -->
+    <div class="home-container" id="home">
+        <h1 class="home-title">盟誓宴礼盒介绍</h1>
+        <div class="option-buttons">
+            <button class="option-btn" id="story-option">彝海结盟故事介绍</button>
+            <button class="option-btn" id="rice-option">雪山草地能量煲仔饭</button>
+            <button class="option-btn" id="soup-option">黑松露羊肉养生汤包</button>
+            <button class="option-btn" id="meat-option">黑山羊肉块</button>
+            <button class="option-btn" id="biscuit-option">松露荞麦饼</button>
+            <button class="option-btn" id="candle-option">松露香氛蜡烛</button>
+        </div>
+    </div>
+    
+    <!-- 彝海结盟故事页面 -->
+    <div class="content-container" id="storyContent" style="background-image: url('jiemeng.jfif'); background-size: cover; background-position: center;">
+        <button class="back-btn" id="backToHomeFromStory">返回</button>
+        <h2 class="content-title">彝海结盟：长征路上的民族团结丰碑</h2>
+        <p class="content-text">1935 年 5 月，中央红军长征进入四川凉山彝族聚居区。此时，红军面临着前所未有的困境：国民党军重兵封锁，彝族同胞因长期受压迫对汉人充满敌意，红军不仅要突破敌军的围追堵截，还要应对彝族武装的阻击。</p>
+        <p class="content-text">为化解危机，红军先遣军司令员刘伯承严格执行党的民族政策，不与彝民冲突，同时积极寻求沟通机会。5 月 22 日，刘伯承与彝族果基家支首领小叶丹在彝海边相见。刘伯承诚恳地表明红军北上抗日的意图和民族平等的政策，小叶丹深受触动，提议与刘伯承结为兄弟。</p>
+        <p class="content-text">结盟仪式按照彝族风俗进行。虽无酒，但二人以水代酒，杀鸡滴血，共同起誓，结下深厚盟谊。结盟后，小叶丹全力支持红军，亲自带路，护送红军顺利通过彝区，为红军后续强渡大渡河、飞夺泸定桥争取了宝贵时间。</p>
+        <p class="content-text">“彝海结盟”是中国共产党民族政策的首次伟大实践，为红军长征胜利奠定了基础，也成为民族团结的典范。它不仅促进了彝族与汉族的团结，还为凉山彝区带来了新的发展机遇，推动了当地社会的进步与发展。</p>
+        <p class="content-text">这段历史佳话，见证了红军与彝族人民之间的深厚情谊，展现了中国共产党民族政策的正确性和强大生命力。它提醒着我们，民族团结是国家繁荣昌盛的重要基石，是推动社会进步的强大动力。在新时代，我们应继续传承和弘扬“彝海结盟”精神，铸牢中华民族共同体意识，共同为实现中华民族伟大复兴的中国梦而努力奋斗。</p>
+    </div>
+    
+    <!-- 雪山草地能量煲仔饭页面 -->
+    <div class="content-container" id="riceContent" style="background-image: url('1.jpg'); background-size: cover; background-position: center;">
+        <button class="back-btn" id="backToHomeFromRice">返回</button>
+        <h2 class="content-title">雪山草地能量煲仔饭</h2>
+        <p class="content-text">在红军长征的漫漫征途中，“急行军” 是战士们日常的写照。他们日夜兼程，穿越雪山草地，克服重重困难。而在这艰苦的行军过程中，如何在有限的条件下获取足够的能量，成为了至关重要的问题。</p>
+        <p class="content-text">这款 “雪山草地能量煲仔饭” 正是基于这样的历史场景精心打造。包装上的金沙江手绘地图，不仅展现了红军 “巧渡金沙江” 的英勇与智慧，也象征着这段伟大征程的起点。当你展开行军路线卡片，会东县的关键历史坐标一一呈现，仿佛带领你重走那段不朽的路途。</p>
+        <p class="content-text">自热包被命名为 “烽火加热包”，当加热时蒸汽喷发，模拟出烽火信号，让你在享用美食的同时，仿佛置身于那个充满激情与挑战的时代。附赠的木质餐具套装上刻有 “红军炊事班” 标识，这是对当年红军后勤保障工作的致敬，也是为了让你在用餐时能感受到那份浓厚的文化沉浸感。</p>
+        <p class="content-text">每一口 “雪山草地能量煲仔饭”，都是对那段历史的回味，对红军精神的传承。它不仅仅是一份食物，更是一段故事、一份情感、一种文化。</p>
+    </div>
+    
+    <!-- 黑松露羊肉养生汤包页面 -->
+    <div class="content-container" id="soupContent" style="background-image: url('2.jpg'); background-size: cover; background-position: center;">
+        <button class="back-btn" id="backToHomeFromSoup">返回</button>
+        <h2 class="content-title">黑松露羊肉养生汤包</h2>
+        <p class="content-text">在红军长征的历史篇章中，“彝海结盟”书写了民族团结的佳话。小叶丹与刘伯承在彝海边的握手，象征着汉彝两族的深厚情谊。这款“黑松露羊肉养生汤包”以这一历史事件为灵感，精心打造“盟誓宴”套餐，包含黑山羊肉块、松露荞麦饼和黑松露羊肉养生汤包。</p>
+        <p class="content-text">设计上，将结盟仪式中的歃血为盟转化为独特的食材组合，汉彝文化交融体现在“双色太极纹”汤料分层结构设计上，象征着两种文化的和谐共存与相互交融。包装主视觉采用结盟地“彝海”实景水墨画，叠加小叶丹与刘伯承握手剪影的烫金浮雕，内附小叶丹家族口述史录音二维码，用户扫描后可收听结盟细节的方言版叙事，仿佛穿越时空，见证那段珍贵的历史。</p>
+        <p class="content-text">在技术方面，采用超临界CO₂萃取技术对黑松露风味进行萃取，避免高温破坏萜烯类成分，最大程度保留食材的原香与营养；通过复合酶解法和彝族古法去腥，提升产品风味，让每一口汤包都蕴含着自然与文化的交融。包装采用四层复合膜材质，具备良好的阻隔和抗菌性能，确保产品的新鲜与安全。</p>
+        <p class="content-text">这款产品不仅是一次味蕾的盛宴，更是一场穿越时空的文化之旅。每一口都承载着历史的厚重与民族团结的深情，邀请您一同品味那段波澜壮阔的岁月，感受其中蕴含的温暖与力量。</p>
+    </div>
+    
+    <!-- 黑山羊肉块页面 -->
+    <div class="content-container" id="meatContent" style="background-image: url('3.jpg'); background-size: cover; background-position: center;">
+        <button class="back-btn" id="backToHomeFromMeat">返回</button>
+        <h2 class="content-title">黑山羊肉块</h2>
+        <p class="content-text">在那段波澜壮阔的革命历程中，红军战士们用热血与汗水书写了不朽的传奇。这款“黑山羊肉块”以独特的视角，将历史的厚重与现代的美味相结合。</p>
+        <p class="content-text">黑山羊肉块选取12-18月龄会东黑山羊后腿肉，这部分肉质鲜嫩多汁，纤维细腻，是整只羊中最为优质的部位之一。经过三段式低温熟成工艺处理，包括卤制、松露油炒制和真空浸渍等步骤，提升肉质嫩度和风味。卤制过程中，选用多种天然香料与秘制酱料，使肉块充分吸收风味，形成独特的口感；松露油炒制则为肉块增添了一抹奢华的香气，让每一口都回味无穷；真空浸渍技术确保了肉块在长时间储存后仍能保持鲜嫩多汁的特性。</p>
+        <p class="content-text">采用高温高压灭菌，确保产品商业无菌。使用铝箔复合袋，充氮气置换氧气，延长保质期。每袋50g肉块，独立小袋分装，并搭配可撕口设计，方便携带和食用。包装印刻“巧渡金沙江”急行军插画，内附微型长征路线图卡片，让你在品尝美食的同时，仿佛置身于那段波澜壮阔的历史之中。</p>
+        <p class="content-text">这款黑山羊肉块将红军长征中的“急行军”精神融入到产品的每一个细节中，这不仅是一份方便快捷的美食，更是一段历史的传承。</p>
+    </div>
+    
+    <!-- 松露荞麦饼页面 -->
+    <div class="content-container" id="biscuitContent" style="background-image: url('4.jpg'); background-size: cover; background-position: center;">
+        <button class="back-btn" id="backToHomeFromBiscuit">返回</button>
+        <h2 class="content-title">松露荞麦饼</h2>
+        <p class="content-text">松露荞麦饼是一款将自然风味与文化内涵完美融合的特色产品。它采用荞麦粉复合配方，通过特定的面团制备和成型工艺，制作出具有五角星形状的饼干，象征着红色精神。在制作过程中，使用五角星模具压制，并采用分段式烘焙，确保饼干拥有酥脆口感和丰富的风味层次。</p>
+        <p class="content-text">松露荞麦饼不仅在口感上给人带来惊喜，其包装也极具特色。产品采用马口铁罐封装，内置食品级干燥剂，保质期长达12个月，方便您随时享用。罐身印刷着“彝海结盟”的场景，生动再现了那段民族团结的历史佳话。更特别的是，用户扫码即可触发3D动画，展示会东民族团结故事，让您在品尝美食的同时，感受深厚的文化底蕴。</p>
+        <p class="content-text">选择松露荞麦饼，就是选择将会东县的美味与文化一同带回家，让这份来自大山深处的礼物，成为您了解和感受会东县独特魅力的窗口。</p>
+    </div>
+    
+    <!-- 松露香氛蜡烛页面 -->
+    <div class="content-container" id="candleContent" style="background-image: url('5.jpg'); background-size: cover; background-position: center;">
+        <button class="back-btn" id="backToHomeFromCandle">返回</button>
+        <h2 class="content-title">松露香氛蜡烛</h2>
+        <p class="content-text">松露香氛蜡烛以红军夜行军火把为灵感，设计出独特的锥形外观和火焰状凹槽。这种设计不仅呼应了历史，还赋予了产品独特的视觉美感。蜡烛采用分层浇筑工艺，燃烧至三分之一时，中心的金属五角星逐渐显露，象征着红军精神的传承与发扬。</p>
+        <p class="content-text">在香氛设计上，这款蜡烛通过不同的燃烧阶段，释放出层次感丰富的气味，包括松露泥土香、皮革和岩盐等，旨在唤起人们对红军宿营环境的联想。为了提升香气的稳定性和层次感，采用了CO₂超临界流体萃取技术提取松露精油，并结合三重蜡复合体系和微胶囊包埋技术，实现香味的缓慢释放，让每一次燃烧都能带来全新的香氛体验。</p>
+        <p class="content-text">包装方面，松露香氛蜡烛采用军绿色亚麻布和激光雕刻椴木盒等材质，营造出浓厚的文化氛围。用户只需扫描盒内的金属五角星，即可触发AR场景，照亮虚拟长征路线，参与互动，感受红色文化的魅力。</p>
+        <p class="content-text">本款松露香氛蜡烛通过视觉、嗅觉和互动体验，将红军长征的精神和故事传递给每一位使用者。</p>
+    </div>
+
+    <script>
+        // 页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', function() {
+            // 获取各个页面和按钮元素
+            const homePage = document.getElementById('home');
+            const storyContent = document.getElementById('storyContent');
+            const riceContent = document.getElementById('riceContent');
+            const soupContent = document.getElementById('soupContent');
+            const meatContent = document.getElementById('meatContent');
+            const biscuitContent = document.getElementById('biscuitContent');
+            const candleContent = document.getElementById('candleContent');
+            
+            const storyOptionBtn = document.getElementById('story-option');
+            const riceOptionBtn = document.getElementById('rice-option');
+            const soupOptionBtn = document.getElementById('soup-option');
+            const meatOptionBtn = document.getElementById('meat-option');
+            const biscuitOptionBtn = document.getElementById('biscuit-option');
+            const candleOptionBtn = document.getElementById('candle-option');
+            
+            const backToHomeFromStoryBtn = document.getElementById('backToHomeFromStory');
+            const backToHomeFromRiceBtn = document.getElementById('backToHomeFromRice');
+            const backToHomeFromSoupBtn = document.getElementById('backToHomeFromSoup');
+            const backToHomeFromMeatBtn = document.getElementById('backToHomeFromMeat');
+            const backToHomeFromBiscuitBtn = document.getElementById('backToHomeFromBiscuit');
+            const backToHomeFromCandleBtn = document.getElementById('backToHomeFromCandle');
+            
+            // 点击选项按钮，进入对应页面
+            storyOptionBtn.addEventListener('click', function() {
+                homePage.style.display = 'none';
+                storyContent.style.display = 'block';
+            });
+            
+            riceOptionBtn.addEventListener('click', function() {
+                homePage.style.display = 'none';
+                riceContent.style.display = 'block';
+            });
+            
+            soupOptionBtn.addEventListener('click', function() {
+                homePage.style.display = 'none';
+                soupContent.style.display = 'block';
+            });
+            
+            meatOptionBtn.addEventListener('click', function() {
+                homePage.style.display = 'none';
+                meatContent.style.display = 'block';
+            });
+            
+            biscuitOptionBtn.addEventListener('click', function() {
+                homePage.style.display = 'none';
+                biscuitContent.style.display = 'block';
+            });
+            
+            candleOptionBtn.addEventListener('click', function() {
+                homePage.style.display = 'none';
+                candleContent.style.display = 'block';
+            });
+            
+            // 点击返回按钮，返回初始界面
+            backToHomeFromStoryBtn.addEventListener('click', function() {
+                storyContent.style.display = 'none';
+                homePage.style.display = 'flex';
+            });
+            
+            backToHomeFromRiceBtn.addEventListener('click', function() {
+                riceContent.style.display = 'none';
+                homePage.style.display = 'flex';
+            });
+            
+            backToHomeFromSoupBtn.addEventListener('click', function() {
+                soupContent.style.display = 'none';
+                homePage.style.display = 'flex';
+            });
+            
+            backToHomeFromMeatBtn.addEventListener('click', function() {
+                meatContent.style.display = 'none';
+                homePage.style.display = 'flex';
+            });
+            
+            backToHomeFromBiscuitBtn.addEventListener('click', function() {
+                biscuitContent.style.display = 'none';
+                homePage.style.display = 'flex';
+            });
+            
+            backToHomeFromCandleBtn.addEventListener('click', function() {
+                candleContent.style.display = 'none';
+                homePage.style.display = 'flex';
+            });
+        });
+    </script>
+</body>
+</html>
